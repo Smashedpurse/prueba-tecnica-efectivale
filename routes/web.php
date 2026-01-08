@@ -15,3 +15,4 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', [ContactController::class, 'index']);
+Route::post('/message', [ContactController::class, 'store']);
