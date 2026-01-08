@@ -13,12 +13,12 @@
     <div class="container mt-5">
         <h2 class="mb-4">Formulario de Contacto</h2>
 
-        <div id="alerta"></div>
+        <div id="alert"></div>
 
         <form id="contactForm">
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
-                <input type="text" id="nombre" class="form-control">
+                <input type="text" id="name" class="form-control">
             </div>
 
             <div class="mb-3">
@@ -28,7 +28,7 @@
 
             <div class="mb-3">
                 <label class="form-label">Mensaje</label>
-                <textarea id="mensaje" class="form-control"></textarea>
+                <textarea id="message" class="form-control"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
