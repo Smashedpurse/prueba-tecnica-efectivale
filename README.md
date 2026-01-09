@@ -1,66 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Prueba Técnica – Formulario de Contacto (Laravel 10)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es una mini aplicación de formulario de contacto desarrollada en **Laravel 10**.  
+Permite registrar mensajes de contacto y visualizarlos en una tabla, cumpliendo con los requisitos de la prueba técnica.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 ¿Qué hace esta aplicación?
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   Muestra un formulario con los campos:
+    -   Nombre
+    -   Email
+    -   Mensaje
+-   Valida los campos antes de enviar la información
+-   Envía los datos sin recargar la página (AJAX)
+-   Guarda los mensajes en un archivo `.json`
+-   Muestra los registros guardados en una tabla
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🛠️ Requisitos previos (IMPORTANTE)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Antes de ejecutar el proyecto, asegúrate de tener instalado en tu computadora:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **PHP 8.1 o superior**
+2. **Composer a partir de la versión 2** (Administrador de dependencias de PHP)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Es posible validar las versiones instaladas por medio de los siguientes comandos correspondientes:
+PHP: php -v
+Composer: composer -v
 
-## Laravel Sponsors
+Esto dentro de la consola de comandos (CMD)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+> ⚠️ Si no cuentas con estos requisitos, el proyecto no podrá ejecutarse.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 📥 Descargar el proyecto
 
-## Contributing
+⚠️ Verificar si Git está instalado
+Abre PowerShell o la terminal y ejecuta:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+git --version
 
-## Code of Conduct
+Si el comando devuelve una versión (por ejemplo: git version 2.x.x), Git ya está instalado.
+Si no, puedes descargarlo desde:
+https://git-scm.com/downloads
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+### 2️⃣ Ingresa a la liga del repositorio
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Entra a este repositorio en GitHub // https://github.com/Smashedpurse/prueba-tecnica-efectivale
 
-## License
+En GitHub:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Entra al repositorio
+2. Haz clic en el botón **Code**
+3. Copia la URL en formato HTTPS
+
+https://github.com/Smashedpurse/prueba-tecnica-efectivale.git
+
+---
+
+### 3️⃣ Clonar el proyecto
+
+Ubícate en la carpeta donde deseas guardar el proyecto:
+
+cd Desktop (Esto para ingresar a tu escritorio y posteriormente a la carpeta donde desees instalar el proyecto)
+
+Ejecuta el comando:
+
+git clone https://github.com/Smashedpurse/prueba-tecnica-efectivale.git
+
+Esto descargará el proyecto completo
+
+---
+
+### 4️⃣ Acceder al proyecto
+
+Una vez descargado, entra a la carpeta del proyecto:
+
+cd nombre-repositorio (prueba-tecnica-efectivale)
+
+Ya de esta manera podremos tener acceso a la carpeta de nuestro proyecto
+
+---
+
+### 4️⃣ Instalación de dependencias
+
+1- Una vez nos encontremos dentro de la carpeta, es necesario generar la instalación de las dependencias necesarias para que el proyecto funcione.
+Para esto ingresaremos en nuestra terminal (cmd) dentro de la carpeta del proyecto el comando: composer install
+
+⚠️ Es un proceso tardado por lo cual es importante !!! NO INTERRUMPIR !!! la descarga de las dependencias, de lo contrario nuestro proyecto nunca funcionará por falta de archivos necesarios
+
+2- Generamos la llave de la aplicación por medio del comando: php artisan key:generate
+
+Si el proceso finaliza de manera correcta obtendremos el mensaje: Application key set successfully.
+
+5️⃣ Iniciar el servidor del proyecto
+
+Para arrancar nuestro proyecto dentro de la terminal de este ingresamos el comando: php artisan serve
+
+Si todo salió de manera correcta se reflejará la URL del proyecto el cual al estar sobre el y con click derecho podremos aperturar en nuestro navegador y disfrutar de la aplicación de captura de registros 🤓
