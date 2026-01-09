@@ -32,7 +32,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
-            <a href="/registros" class="btn btn-secondary">Ver registros</a>
+            <a href="/records" class="btn btn-secondary">Ver registros</a>
         </form>
     </div>
 
